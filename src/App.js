@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <Aboutus />
-      <Faculties />
+      {/* <Faculties /> */}
       <Ourservices />
       <Ourworks />
       <Footer />
