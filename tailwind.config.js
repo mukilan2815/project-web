@@ -5,9 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "windmill":"url(../Images/windmill.jpeg)"
-      }
     },
   },
   plugins: [],

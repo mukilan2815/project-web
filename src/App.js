@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
-import Faculties from "./components/Faculties";
+// import Faculties from "./components/Faculties";
 import Ourservices from "./components/Ourservices";
 import Ourworks from "./components/Ourworks";
 import Footer from "./components/Footer";
