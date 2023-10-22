@@ -28,7 +28,7 @@ const Footer = () => {
         <p>Our Works</p>
         <p>Contact</p>
       </section>
-      <section style={lineStyle}></section> {/* Styled the vertical line */}
+      <section style={lineStyle}></section> 
       <section>
         <h5 className="font-bold">SERVICES</h5>
         <p>Electrical Distribution System</p>
@@ -36,7 +36,7 @@ const Footer = () => {
         <p>PQ Study / Harmonics</p>
         <p>Capacitor Performance</p>
       </section>
-      <section style={lineStyle}></section> {/* Styled the vertical line */}
+      <section style={lineStyle}></section>
       <section>
         <h5 className="font-bold">CONTACT</h5>
         <p>Mrs. P. Nagaveni</p>

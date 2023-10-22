@@ -7,12 +7,12 @@ const Home = () => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    height: "100vh", // Set the background height to the viewport height
+    height: "100vh",
   };
 
   return (
     <div
-      className="relative z-10 flex flex-col md:flex-row md:items-center h-screen" // Set the height of the main container to the viewport height
+      className="relative z-10 flex flex-col md:flex-row md:items-center h-screen" 
       style={sectionStyle}
     >
       <div className="z-20 mt-6 md:mt-24">
@@ -25,7 +25,6 @@ const Home = () => {
         <br />
         <h1 className="text-white text-2xl md:text-4xl font-bold ml-10 md:ml-20">
           {" "}
-          {/* Reduced text size for mobile */}
           "FOR YOUR BETTER
           <br /> <span className="space-y-2 text-green-900">TOMORROW</span>,
           SAVE <br />
