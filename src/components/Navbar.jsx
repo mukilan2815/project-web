@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const [isMobile, setIsMobile] = useState(false);
 
-  const handleResize = () => {
+    const handleResize = () => {
     if (window.innerWidth <= 768) {
       setIsMobile(true);
     } else {
