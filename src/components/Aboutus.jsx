@@ -12,7 +12,6 @@ const Aboutus = () => {
   return (
     <div className="mx-4 md:mx-24">
       <br />
-      {/* Apply different margins for small and medium screens */}
       <nav>
         <ul className="flex justify-center text-2xl">
           <li
