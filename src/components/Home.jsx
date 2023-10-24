@@ -33,7 +33,7 @@ const Home = () => {
         </h1>
         <br /> <br />
         <div className="md:pl-2 ml-4 md:ml-20">
-          <button className="bg-green-300 rounded-3xl p-3 md:p-4 px-8 md:px-10 flex items-center border-none">
+          <button className="bg-green-400 rounded-3xl p-3 md:p-4 px-8 md:px-10 flex items-center border-none">
             Know More
             <div>
               <AiOutlineArrowRight />
