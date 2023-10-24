@@ -1,5 +1,6 @@
 import React from "react";
 import Windmill from "../Images/windmill.jpeg";
+import {AiOutlineArrowRight} from 'react-icons/ai'
 
 const Home = () => {
   const sectionStyle = {
@@ -12,7 +13,7 @@ const Home = () => {
 
   return (
     <div
-      className="relative z-10 flex flex-col md:flex-row md:items-center h-screen" 
+      className="relative z-10 flex flex-col md:flex-row md:items-center h-screen"
       style={sectionStyle}
     >
       <div className="z-20 mt-6 md:mt-24">
@@ -32,8 +33,11 @@ const Home = () => {
         </h1>
         <br /> <br />
         <div className="md:pl-2 ml-4 md:ml-20">
-          <button className="bg-green-300 rounded-3xl p-3 md:p-4 px-8 md:px-10">
+          <button className="bg-green-300 rounded-3xl p-3 md:p-4 px-8 md:px-10 flex items-center border-none">
             Know More
+            <div>
+              <AiOutlineArrowRight />
+            </div>
           </button>
         </div>
         <br />

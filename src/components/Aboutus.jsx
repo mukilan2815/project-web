@@ -15,7 +15,7 @@ const Aboutus = () => {
       <nav>
         <ul className="flex justify-center text-2xl">
           <li
-            className={`mr-2 cursor-pointer md:mr-10 hover:border-b-teal-500 ${
+            className={`mr-2 cursor-pointer md:mr-10 hover:border-b-teal-500  ${
               selectedTab === "Karpagam" ? "border-b-teal-500" : ""
             }`}
             onClick={() => handleTabChange("Karpagam")}
@@ -34,7 +34,7 @@ const Aboutus = () => {
         </ul>
       </nav>
       <br />
-      <section className="flex flex-col bg-white rounded-lg md:flex-row h-auto md:h-96 p-4 md:p-6 shadow-2xl">
+      <section className="flex flex-col bg-white rounded-lg md:flex-row h-auto md:h-96 p-4 md:p-6 group hover:shadow-2xl transition duration-300">
         <div className="relative w-full md:w-1/2">
           <img
             src={selectedTab === "Karpagam" ? Kahe : Windmill}
@@ -46,7 +46,7 @@ const Aboutus = () => {
           <h6>
             {selectedTab === "Karpagam"
               ? "Karpagam Academy of Higher Education (KAHE) established under Section 3 of UGC Act 1956 is approved by Ministry of Human Resource and Development, Government of India. Dr. R. Vasanthakumar, the president of the trust, a philanthropist, industrialist, entrepreneur, and culture promoter. Contemporary infrastructure, modern teaching methodologies, career-oriented training, excellent placements, and the finest faculty have always been Karpagam's hallmark. Besides technical expertise, the University has made a mark for itself since its inception by developing communication and soft skills, ensuring enlightening knowledge, extending holistic education, and creating a strong value system. Today, with a strength of 6000 students and over 750 teaching & non-teaching staff, the Karpagam Academy of Higher Education (KAHE) is setting new benchmarks in the educational sphere."
-              : `The Department of Electrical and Electronics Engineering, offers Bachelor of Engineering in Electrical and Electronics Engineering and Master of Engineering in Power Systems Engineering Research programmes: Ph.D. in Electrical and Electronics Engineering. The specializations of the department are Energy Auditing and survey management, Power Systems, High Voltage Engineering, Power Electronics and Drives, Control and Instrumentation, Embedded System Technology, Electric Drives and Embedded Control. The Department has well equipped Machines, Power Analyzer, Power Electronics and Power System Laboratories and a team of dedicated faculty members who have experience in the Industry as well as Academic.`}
+              : "The Department of Electrical and Electronics Engineering offers Bachelor of Engineering in Electrical and Electronics Engineering and Master of Engineering in Power Systems Engineering Research programmes: Ph.D. in Electrical and Electronics Engineering. The specializations of the department are Energy Auditing and survey management, Power Systems, High Voltage Engineering, Power Electronics and Drives, Control and Instrumentation, Embedded System Technology, Electric Drives and Embedded Control. The Department has well-equipped Machines, Power Analyzer, Power Electronics and Power System Laboratories and a team of dedicated faculty members who have experience in the Industry as well as Academic."}
           </h6>
         </div>
       </section>

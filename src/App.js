@@ -5,13 +5,14 @@ import Aboutus from "./components/Aboutus";
 import Ourservices from "./components/Ourservices";
 import Ourworks from "./components/Ourworks";
 import Footer from "./components/Footer";
+import Faculties from "./components/Faculties";
 function App() {
   return (
     <div>
       <Navbar />
       <Home />
       <Aboutus />
-      {/* <Faculties /> */}
+      <Faculties />
       <Ourservices />
       <Ourworks />
       <Footer />
