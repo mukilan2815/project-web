@@ -30,18 +30,20 @@ const Ourworks = () => {
     },
     {
       title: "Card 2 Title",
-      description: "Description for Card 2",
+      description:
+        "Seethalakshi foundry, HT service audit , shortout the  MD issues",
       image: img2,
     },
     {
       title: "Card 3 Title",
-      description: "Description for Card 3",
+      description:
+        "National model school, purpose of auditing is to reduce EB bill and achieved 15,000 per month and give suggestions to achieve nearly 30,000",
       image: img3,
     },
     {
       title: "Card 4 Title",
       description: "Description for Card 4",
-      image: img4,
+      image: img9,
     },
     {
       title: "Card 5 Title",
@@ -66,9 +68,8 @@ const Ourworks = () => {
     {
       title: "Card 9 Title",
       description: "Description for Card 9",
-      image: img9,
+      image: img4,
     },
-    // Add more cards as needed
   ];
 
   const scrollContainerRef = useRef(null);
@@ -86,16 +87,14 @@ const Ourworks = () => {
           scrollContainerRef.current.scrollWidth -
             scrollContainerRef.current.offsetWidth
         ) {
-          // If reached the end, reset to the beginning
           scrollContainerRef.current.scrollLeft = 0;
         }
       }
     };
 
-    // Start scrolling immediately
     startScrolling();
 
-    scrollInterval = setInterval(startScrolling, 100); // 100ms interval for smooth scrolling, adjust as needed
+    scrollInterval = setInterval(startScrolling); 
 
     return () => {
       clearInterval(scrollInterval);
@@ -104,12 +103,12 @@ const Ourworks = () => {
 
   return (
     <div
-      className="overflow-x-auto p-4"
+      className="overflow-x-auto p-4 flex-wrap"
       style={{
         whiteSpace: "nowrap",
         overflowY: "hidden",
         scrollbarWidth: "thin",
-        scrollBehavior: "smooth", // Add smooth scrolling
+        scrollBehavior: "smooth",
       }}
       ref={scrollContainerRef}
     >
