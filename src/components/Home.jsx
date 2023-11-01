@@ -1,6 +1,8 @@
-import React from "react";
+import React ,{ useEffect} from "react";
 import Windmill from "../Images/windmill.jpeg";
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import AOS from "aos"; // Import AOS library
+import "aos/dist/aos.css"; // Import the AOS CSS file for styling
 
 const Home = () => {
   const sectionStyle = {
@@ -10,11 +12,14 @@ const Home = () => {
     backgroundSize: "cover",
     height: "100vh",
   };
-
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
   return (
     <div
       className="relative z-10 flex flex-col md:flex-row md:items-center h-screen"
       style={sectionStyle}
+      data-aos="fade-up"
     >
       <div className="z-20 mt-6 md:mt-24">
         <div className="text-4xl font-medium ml-10 md:ml-20 bg-windmill">

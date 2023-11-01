@@ -17,42 +17,23 @@ const FacultyCard = ({
   instagramLink,
 }) => {
   return (
-    <Card className="w-96 shadow-md transition duration-300 ease-in-out hover:shadow-xl">
-      <CardHeader floated={false} className="h-70 flex justify-center my-5">
-        <img src={imgSrc} alt="profile-picture" />
-      </CardHeader>
-      <CardBody className="text-center">
-        <Typography variant="h4" color="blue-gray" className="mb-2">
-          {name}
-        </Typography>
-        <Typography color="blue-gray" className="font-medium" textGradient>
-          {role}
-        </Typography>
-      </CardBody>
-      <CardFooter className="flex justify-center gap-7 pt-2">
-        <Tooltip content="Like">
-          <a href={facebookLink} target="_blank" rel="noopener noreferrer">
-            <Typography variant="lead" color="blue" textGradient>
-              <i className="fab fa-facebook" />
-            </Typography>
-          </a>
-        </Tooltip>
-        <Tooltip content="Follow">
-          <a href={twitterLink} target="_blank" rel="noopener noreferrer">
-            <Typography variant="lead" color="light-blue" textGradient>
-              <i className="fab fa-twitter" />
-            </Typography>
-          </a>
-        </Tooltip>
-        <Tooltip content="Follow">
-          <a href={instagramLink} target="_blank" rel="noopener noreferrer">
-            <Typography variant="lead" color="purple" textGradient>
-              <i className="fab fa-instagram" />
-            </Typography>
-          </a>
-        </Tooltip>
-      </CardFooter>
-    </Card>
+    <div class="w-96 p-4 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all transform duration-500 mb-">
+      {" "}
+      <img
+        class="w-full h-64 object-fit rounded-t-md"
+        src={imgSrc}
+        alt={name}
+      />{" "}
+      <div class="mt-4">
+        <h1 class="text-xl font-bold text-gray-700">{name}</h1>{" "}
+        <p class="text-sm mt-2 text-gray-700">{role}</p>
+        <div class="mt-4 mb-2 flex justify-center">
+          <button class="text-base block font-semibold py-2 px-4 text-green-100 hover:text-white bg-green-400 rounded-lg shadow hover:shadow-md transition duration-300">
+            Know More
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 

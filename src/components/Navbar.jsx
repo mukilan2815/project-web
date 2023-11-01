@@ -13,13 +13,18 @@ const Navbar = () => {
   ];
 
   const [isMobile, setIsMobile] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
-    const handleResize = () => {
+  const handleResize = () => {
     if (window.innerWidth <= 768) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
     }
+  };
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
   };
 
   useEffect(() => {
@@ -33,13 +38,40 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="bg-green-200">
-      <nav className="navbar-section">
-        {" "}
+    <div className="">
+      <nav className="navbar-section bg-green-200">
         <div className="flex justify-around">
           <img src={kahe} alt="kahe" width={200} />
           {isMobile ? (
-            <RxHamburgerMenu className="mt-6" size={25} />
+            <div className="flex items-center">
+              <RxHamburgerMenu
+                className="mt-6"
+                size={25}
+                onClick={toggleDropdown}
+              />
+              {showDropdown && (
+                <ul className="mt-6">
+                  {menuItems.map((item, index) => (
+                    <li
+                      key={index}
+                      className="cursor-pointer"
+                      onClick={toggleDropdown}
+                    >
+                      {item}
+                    </li>
+                  ))}
+                  <li className="cursor-pointer " onClick={toggleDropdown}>
+                  </li>
+                  {showDropdown && (
+                    <ul className="ml-2">
+                      <li>EEE</li>
+                      <li>CIVIL</li>
+                      <li>CHEMISTRY</li>
+                    </ul>
+                  )}
+                </ul>
+              )}
+            </div>
           ) : (
             <ul className="flex items-center ml-10">
               {menuItems.map((item, index) => (
@@ -47,11 +79,19 @@ const Navbar = () => {
                   {item}
                 </li>
               ))}
+              <li className="cursor-pointer" onClick={toggleDropdown}>
+              </li>
+              {showDropdown && (
+                <ul className="ml-2">
+                  <li>EEE</li>
+                  <li>CIVIL</li>
+                  <li>CHEMISTRY</li>
+                </ul>
+              )}
             </ul>
           )}
         </div>
       </nav>
-      
     </div>
   );
 };

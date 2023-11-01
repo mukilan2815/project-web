@@ -26,7 +26,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 1
+                  Electrical Distribution system
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
@@ -43,7 +43,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 2
+                  PF Improvement study{" "}
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
@@ -60,7 +60,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 3
+                  PQ Study / Harmonics{" "}
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
@@ -82,7 +82,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 4
+                  Capacitor performance{" "}
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
@@ -99,7 +99,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 5
+                  Transformer optimization{" "}
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
@@ -120,7 +120,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 1
+                  Cable sizing & loss reduction{" "}
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
@@ -137,7 +137,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 2
+                  Motor loading survey{" "}
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
@@ -154,7 +154,7 @@ const Ourservices = () => {
               />
               <div class="flex-1 flex flex-col items-center">
                 <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Service Title 3
+                  Lighting system{" "}
                 </h3>
                 <p class="text-gray-600 text-sm text-center">
                   Service description goes here.
