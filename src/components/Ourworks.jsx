@@ -16,7 +16,12 @@ const Card = ({ title, description, image }) => (
       <h3 className="text-base md:text-xl font-medium text-gray-800">
         {title}
       </h3>
-      <p className="mt-4 text-base md:text-lg text-gray-600">{description}</p>
+      <p
+        className="mt-4 text-base md:text-lg text-gray-600"
+        style={{ whiteSpace: "pre-wrap" }}
+      >
+        {description}
+      </p>
     </div>
   </div>
 );
@@ -52,12 +57,14 @@ const Ourworks = () => {
     },
     {
       title: "Card 6 Title",
-      description: "Description for Card 6",
+      description:
+        "MSK Engineers, PF improvement from 0.84 to 0.97 and cut off the penalty charges",
       image: img6,
     },
     {
       title: "Card 7 Title",
-      description: "Description for Card 7",
+      description:
+        "Best heat treatment,  find out the reason for PF and give solutions for their three years of PF plenty charge of Rupees 30000 per month",
       image: img7,
     },
     {
@@ -78,7 +85,7 @@ const Ourworks = () => {
     let scrollInterval;
 
     const startScrolling = () => {
-      const scrollStep = 2; // Adjust the scroll step as needed for smoothness
+      const scrollStep = 2;
       if (scrollContainerRef.current) {
         scrollContainerRef.current.scrollLeft += scrollStep;
 
@@ -94,7 +101,7 @@ const Ourworks = () => {
 
     startScrolling();
 
-    scrollInterval = setInterval(startScrolling); 
+    scrollInterval = setInterval(startScrolling);
 
     return () => {
       clearInterval(scrollInterval);
