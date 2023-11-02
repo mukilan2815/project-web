@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import kahe from "../Images/LOGO-with-different-colors-03.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdArrowDropDown } from "react-icons/md";
-import Civil from "../Civil";
+import Civil from "../Civil"; // Import the Civil component
 import App from "../App"; // Import the App component
 
 const Navbar = () => {
@@ -49,12 +49,24 @@ const Navbar = () => {
   }, []);
 
   const handleMenuItemClick = (item) => {
-    const target = document.getElementById(
-      item.toLowerCase().replace(" ", "-")
-    );
+    // Smooth scrolling to the corresponding section
+    const targetId =
+      item === "Home" ? "civil" : item.toLowerCase().replace(" ", "-");
+    const target = document.getElementById(targetId);
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
+
+    // Update the selected department if needed
+    if (item === "About" && selectedDept !== "Civil") {
+      setSelectedDept("Civil");
+    } else if (item === "Faculties" && selectedDept !== "EEE") {
+      setSelectedDept("EEE");
+    } else {
+      setSelectedDept(null);
+    }
+
+    toggleDropdown();
   };
 
   return (

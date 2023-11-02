@@ -10,7 +10,10 @@ import img7 from "../Images/work7.jpeg";
 import img8 from "../Images/work8.jpeg";
 
 const Card = ({ title, description, image }) => (
-  <div className="inline-flex flex-col xl:flex-row shadow hover:shadow-md bg-white rounded-lg overflow-hidden cursor-grab mr-4">
+  <div
+    id="civilourworks"
+    className="inline-flex flex-col xl:flex-row shadow hover:shadow-md bg-white rounded-lg overflow-hidden cursor-grab mr-4"
+  >
     <img className="object-cover w-full h-48" src={image} alt="Card" />
     <div className="relative p-4">
       <h3 className="text-base md:text-xl font-medium text-gray-800">

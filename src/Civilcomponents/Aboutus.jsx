@@ -11,7 +11,7 @@ const Aboutus = () => {
   }, []);
 
   return (
-    <div className="mx-4 md:mx-24 " data-aos="fade-up">
+    <div id="civilabout" className="mx-4 md:mx-24 " data-aos="fade-up">
       <br />
       <nav>
         <ul className="flex justify-center text-2xl">
@@ -56,7 +56,7 @@ const Aboutus = () => {
             Corporation, Nigilirs Horticulture department and Karur Govt.
             Medical College works. Our Department experts are authorized for
             issuing Third Party Inspection Certificate to town panchayat road
-            works of Sulur, Vellalore, Kinathukadavu and Madhukarai. 
+            works of Sulur, Vellalore, Kinathukadavu and Madhukarai.
           </h6>
         </div>
       </section>
