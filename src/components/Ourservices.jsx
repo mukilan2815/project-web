@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import sim from "../Images/aboutuswindmill.jpg";
+import "aos/dist/aos.css";
 
 const Ourservices = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div>
       <section id="services" className="bg-gray-100 py-10">
@@ -18,51 +27,60 @@ const Ourservices = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
             <br />
             {/* Service Item 1 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
                   Electrical Distribution system
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>
             </div>
 
             {/* Service Item 2 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  PF Improvement study{" "}
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
+                  PF Improvement study
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>
             </div>
 
             {/* Service Item 3 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  PQ Study / Harmonics{" "}
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
+                  PQ Study / Harmonics
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>
@@ -74,34 +92,40 @@ const Ourservices = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
             <br />
             {/* Service Item 9 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Capacitor performance{" "}
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
+                  Capacitor performance
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>
             </div>
 
             {/* Service Item 10 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Transformer optimization{" "}
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
+                  Transformer optimization
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>
@@ -112,51 +136,60 @@ const Ourservices = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 ">
             <br />
             {/* Service Item 1 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Cable sizing & loss reduction{" "}
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
+                  Cable sizing & loss reduction
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>
             </div>
 
             {/* Service Item 2 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Motor loading survey{" "}
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
+                  Motor loading survey
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>
             </div>
 
             {/* Service Item 3 */}
-            <div class="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex">
+            <div
+              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              data-aos="fade-up"
+            >
               <img
                 src={sim}
                 alt="Service Image 4"
-                class="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
-              <div class="flex-1 flex flex-col items-center">
-                <h3 class="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Lighting system{" "}
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
+                  Lighting system
                 </h3>
-                <p class="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm text-center">
                   Service description goes here.
                 </p>
               </div>

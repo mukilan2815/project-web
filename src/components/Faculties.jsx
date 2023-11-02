@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import img1 from "../Images/balachandran.png";
+import img1 from "../Images/vaigundamoorthihod.png";
+import img2 from "../Images/balachandran.png";
+import img3 from "../Images/balachandran.png";
+import img4 from "../Images/selvaganapathi.png";
+import img5 from "../Images/sivaramkumar.png";
 
 const Faculties = () => {
   const facultyData = [
@@ -12,7 +16,18 @@ const Faculties = () => {
       orchidId: "0000-0002-4805-7802",
       scopusId: "24605735500",
       phone: "9445898955",
-      image: "faculty1.jpg", // Add the image filename
+      image: img1,
+    },
+    {
+      name: "Dr. M. Sivaramkumar",
+      position: "Professor",
+      department: "Department of Electrical and Electronics Engineering",
+      location: "Kahe",
+      email: "bacyavaigo2000@gmail.com",
+      orchidId: "0000-0002-4805-7802",
+      scopusId: "24605735500",
+      phone: "9445898955",
+      image: img2,
     },
     {
       name: "Dr. M. Vaigundamoorthi",
@@ -23,7 +38,29 @@ const Faculties = () => {
       orchidId: "0000-0002-4805-7802",
       scopusId: "24605735500",
       phone: "9445898955",
-      image: "faculty2.jpg", // Add the image filename
+      image: img3,
+    },
+    {
+      name: "Dr. M. Vaigundamoorthi",
+      position: "Professor",
+      department: "Department of Electrical and Electronics Engineering",
+      location: "Kahe",
+      email: "bacyavaigo2000@gmail.com",
+      orchidId: "0000-0002-4805-7802",
+      scopusId: "24605735500",
+      phone: "9445898955",
+      image: img4,
+    },
+    {
+      name: "Dr. M. Vaigundamoorthi",
+      position: "Professor",
+      department: "Department of Electrical and Electronics Engineering",
+      location: "Kahe",
+      email: "bacyavaigo2000@gmail.com",
+      orchidId: "0000-0002-4805-7802",
+      scopusId: "24605735500",
+      phone: "9445898955",
+      image: img5,
     },
   ];
 
