@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import kahe from "../Images/LOGO-with-different-colors-03.png";
+import kahe from "./Images/LOGO-with-different-colors-03.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdArrowDropDown } from "react-icons/md";
+import Civil from "./Civil"; // Import the Civil component
+
 const Navbar = () => {
   const menuItems = [
     "Home",
@@ -68,8 +70,7 @@ const Navbar = () => {
                       {item}
                     </li>
                   ))}
-                  {/* Department dropdown */}
-                  <li className="cursor-pointer relative">
+                  <li className="cursor-pointer relative ">
                     Department
                     {showDropdown && (
                       <ul className="absolute bg-green-200 p-2 rounded-lg shadow-md">
@@ -99,20 +100,19 @@ const Navbar = () => {
                   {item}
                 </li>
               ))}
-              {/* Department dropdown on larger screens */}
               <li
                 className="flex select-none items-center ml-10 cursor-pointer relative bg-green-600 p-3 rounded-xl"
                 onClick={toggleDropdown}
               >
                 Department <MdArrowDropDown size={20} />
                 {showDropdown && (
-                  <ul className="absolute mt-40  bg-green-200 p-2 rounded-lg shadow-lg ">
+                  <ul className="absolute mt-40 z-10  bg-green-200 p-2 rounded-lg shadow-lg ">
                     {departments.map((dept, index) => (
                       <li
                         key={index}
                         className={`relative font-bold select-none m-1 ${
                           selectedDept === dept
-                            ? "text-white bg-green-500"
+                            ? "text-white bg-green-500 w-full"
                             : "text-black"
                         }`}
                         onClick={() => handleDepartmentClick(dept)}
@@ -127,6 +127,8 @@ const Navbar = () => {
           )}
         </div>
       </nav>
+      {selectedDept === "Civil" && <Civil />}{" "}
+      {/* Conditional rendering of the Civil component */}
     </div>
   );
 };
