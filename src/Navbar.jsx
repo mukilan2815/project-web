@@ -47,6 +47,16 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleMenuItemClick = (item) => {
+    // Smooth scroll to the target section
+    const target = document.getElementById(
+      item.toLowerCase().replace(" ", "-")
+    );
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="relative z-40">
       <nav className="navbar-section bg-green-200">
@@ -65,12 +75,15 @@ const Navbar = () => {
                     <li
                       key={index}
                       className="cursor-pointer"
-                      onClick={toggleDropdown}
+                      onClick={() => {
+                        toggleDropdown();
+                        handleMenuItemClick(item);
+                      }}
                     >
                       {item}
                     </li>
                   ))}
-                  <li className="cursor-pointer relative ">
+                  <li className="cursor-pointer relative">
                     Department
                     {showDropdown && (
                       <ul className="absolute bg-green-200 p-2 rounded-lg shadow-md">
@@ -97,7 +110,12 @@ const Navbar = () => {
             <ul className="flex items-center ml-10 relative">
               {menuItems.map((item, index) => (
                 <li key={index} className={index !== 0 ? "ml-10" : ""}>
-                  {item}
+                  <a
+                    href={`#${item.toLowerCase().replace(" ", "-")}`}
+                    onClick={() => handleMenuItemClick(item)}
+                  >
+                    {item}
+                  </a>
                 </li>
               ))}
               <li
@@ -106,7 +124,7 @@ const Navbar = () => {
               >
                 Department <MdArrowDropDown size={20} />
                 {showDropdown && (
-                  <ul className="absolute mt-40 z-10  bg-green-200 p-2 rounded-lg shadow-lg ">
+                  <ul className="absolute mt-40 z-10 bg-green-200 p-2 rounded-lg shadow-lg">
                     {departments.map((dept, index) => (
                       <li
                         key={index}
@@ -127,8 +145,8 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-      {selectedDept === "Civil" && <Civil />}{" "}
-      {/* Conditional rendering of the Civil component */}
+      {selectedDept === "Civil" && <Civil id="civil" />}
+      {/* Conditional rendering of the Civil component with an id */}
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-green-200 flex justify-evenly py-28">
+    <div id="contact" className="bg-green-200 flex justify-evenly py-28">
       {" "}
       <section>
         <h5 className="font-bold m-4">FACULTY COORDINATES</h5>

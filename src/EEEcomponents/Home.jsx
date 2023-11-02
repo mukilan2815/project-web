@@ -19,6 +19,7 @@ const Home = () => {
 
   return (
     <div
+      id="home"
       className="relative flex flex-col md:flex-row md:items-center h-screen"
       style={sectionStyle}
       data-aos="fade-up" // Apply AOS animation to the main container

@@ -109,7 +109,7 @@ const Ourworks = () => {
   }, []);
 
   return (
-    <div className="my-7">
+    <div id="our-works" className="my-7">
       <h1 className="flex justify-center text-3xl font-semibold text-gray-800 ">Our Works</h1>
       <div
         className="overflow-x-auto p-4 flex-wrap"

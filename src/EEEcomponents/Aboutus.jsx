@@ -12,7 +12,7 @@ const Aboutus = () => {
   }, []);
 
   return (
-    <div className="mx-4 md:mx-24 " data-aos="fade-up">
+    <div id="about" className="mx-4 md:mx-24 " data-aos="fade-up">
       <br />
       <nav>
         <ul className="flex justify-center text-2xl">

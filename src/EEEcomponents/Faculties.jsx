@@ -79,7 +79,7 @@ const Faculties = () => {
   };
 
   return (
-    <div className="bg-green-200 rounded-lg flex flex-col py-5">
+    <div id="faculties" className="bg-green-200 rounded-lg flex flex-col py-5">
       <div className="flex justify-center text-3xl font-semibold text-gray-800 ">
         <h1>Our Faculties</h1>
       </div>
