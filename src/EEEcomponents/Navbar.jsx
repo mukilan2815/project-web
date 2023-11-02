@@ -101,7 +101,7 @@ const Navbar = () => {
               ))}
               {/* Department dropdown on larger screens */}
               <li
-                className="flex select-none items-center ml-10 cursor-pointer relative bg-green-700 p-3 rounded-xl"
+                className="flex select-none items-center ml-10 cursor-pointer relative bg-green-600 p-3 rounded-xl"
                 onClick={toggleDropdown}
               >
                 Department <MdArrowDropDown size={20} />
