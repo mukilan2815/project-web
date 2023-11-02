@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Windmill from "../Images/windmill.jpeg";
+import Windmill from "../Images/homepiccivil.jpg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import AOS from "aos"; // Import AOS library
 import "aos/dist/aos.css"; // Import the AOS CSS file for styling

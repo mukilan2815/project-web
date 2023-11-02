@@ -28,7 +28,7 @@ const Ourservices = () => {
             <br />
             {/* Service Item 1 */}
             <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              className="bg-white w-full rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
@@ -39,17 +39,17 @@ const Ourservices = () => {
               />
               <div className="flex-1 flex flex-col items-center">
                 <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Electrical Distribution system
+                  SURVEYING WORKS
                 </h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
+                  Surveying works using Total Station, GPS, etc.
                 </p>
               </div>
             </div>
 
             {/* Service Item 2 */}
             <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              className="bg-white w-full rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
               data-aos-duration="3000"
             >
@@ -60,17 +60,19 @@ const Ourservices = () => {
               />
               <div className="flex-1 flex flex-col items-center">
                 <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  PF Improvement study
+                  TESTS ON MATERIALS:
                 </h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
+                  Physical & Mechanical properties of aggregates, Cement
+                  Testing, Concrete Testing, Steel Testing, Brick/Tile Testing,
+                  Bitumen Testing.
                 </p>
               </div>
             </div>
 
             {/* Service Item 3 */}
             <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              className="bg-white w-full rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
               data-aos-duration="4000"
             >
@@ -81,10 +83,13 @@ const Ourservices = () => {
               />
               <div className="flex-1 flex flex-col items-center">
                 <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  PQ Study / Harmonics
+                  TRANSPORTATION ENGINEERING
                 </h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
+                  Flexible & Rigid pavement design, Geometric design of
+                  Pavement, Road Network planning & Design for pavement (Rigid
+                  and Flexible), Overlays Design of pavement, Bituminous Mix
+                  Design.
                 </p>
               </div>
             </div>
@@ -94,9 +99,9 @@ const Ourservices = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
             <br />
-            {/* Service Item 9 */}
+            {/* Service Item 4 */}
             <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              className="bg-white w-full rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
               data-aos-duration="5000"
             >
@@ -107,17 +112,20 @@ const Ourservices = () => {
               />
               <div className="flex-1 flex flex-col items-center">
                 <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Capacitor performance
+                  DRAFTING WORKS
                 </h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
+                  Structural Detailing (Bar Bending Schedule), Corporation
+                  Approval Drawings, Pre DCR Works, CMDAwork, Building
+                  Completion Certificate, Estimate of building structure for a
+                  bank loan, Fabrication of Steel Structure.
                 </p>
               </div>
             </div>
 
             {/* Service Item 10 */}
             <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              className="bg-white w-full rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
               data-aos-duration="6000"
             >
@@ -128,80 +136,18 @@ const Ourservices = () => {
               />
               <div className="flex-1 flex flex-col items-center">
                 <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Transformer optimization
+                  STRUCTURAL ENGINEERING
                 </h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
+                  Structural Analysis & Design, Stability of Building structure
+                  and Evaluation, Valuation of Building, Condition Monitoring,
+                  Repair and Rehabilitation of Structures, Design of Sub & Super
+                  Structures, Design of Retaining Structures, Project Management
+                  Consultancy.
                 </p>
               </div>
             </div>
             <br />
-          </div>
-          <br />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 ">
-            <br />
-            {/* Service Item 1 */}
-            <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
-              data-aos="fade-up"
-              data-aos-duration="7000"
-            >
-              <img
-                src={sim}
-                alt="Service Image 4"
-                className="w-20 h-20 rounded-full"
-              />
-              <div className="flex-1 flex flex-col items-center">
-                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Cable sizing & loss reduction
-                </h3>
-                <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
-                </p>
-              </div>
-            </div>
-
-            {/* Service Item 2 */}
-            <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
-              data-aos="fade-up"
-              data-aos-duration="8000"
-            >
-              <img
-                src={sim}
-                alt="Service Image 4"
-                className="w-20 h-20 rounded-full"
-              />
-              <div className="flex-1 flex flex-col items-center">
-                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Motor loading survey
-                </h3>
-                <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
-                </p>
-              </div>
-            </div>
-
-            {/* Service Item 3 */}
-            <div
-              className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
-              data-aos="fade-up"
-              data-aos-duration="9000"
-            >
-              <img
-                src={sim}
-                alt="Service Image 4"
-                className="w-20 h-20 rounded-full"
-              />
-              <div className="flex-1 flex flex-col items-center">
-                <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
-                  Lighting system
-                </h3>
-                <p className="text-gray-600 text-sm text-center">
-                  Service description goes here.
-                </p>
-              </div>
-            </div>
           </div>
           <br />
         </div>

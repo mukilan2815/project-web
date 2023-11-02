@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Windmill from "../Images/aboutuswindmill.jpg";
-import Kahe from "../Images/kahe.jpg";
+import civil from '../Images/aboutcivil.jpg'
 import AOS from "aos"; // Import AOS library
 import "aos/dist/aos.css"; // Import the AOS CSS file for styling
 
@@ -34,7 +33,7 @@ const Aboutus = () => {
       >
         <div className="relative w-full md:w-1/2" data-aos="fade-left">
           <img
-            src={selectedTab === "Electrical Department" ? Windmill : Kahe}
+            src={civil}
             alt="Image"
             className="w-full h-auto md:h-full object-cover rounded-t-lg"
           />

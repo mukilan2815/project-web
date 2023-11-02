@@ -1,4 +1,4 @@
-// import Navbar from "./Civilcomponents/Navbar";
+import Navbar from "./Civilcomponents/Navbar";
 import Home from "./Civilcomponents/Home";
 import Aboutus from "./Civilcomponents/Aboutus";
 import Ourservices from "./Civilcomponents/Ourservices";
@@ -15,7 +15,7 @@ function Civil() {
     }, []);
     return (
         <div className="bg-slate-50">
-            {/* <Navbar /> */}
+            <Navbar />
             <Home />
             <Aboutus />
             <Faculties />

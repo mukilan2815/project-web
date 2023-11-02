@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "./EEEcomponents/Navbar";
 import Home from "./EEEcomponents/Home";
 import Aboutus from "./EEEcomponents/Aboutus";
 import Ourservices from "./EEEcomponents/Ourservices";
