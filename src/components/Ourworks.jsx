@@ -109,18 +109,20 @@ const Ourworks = () => {
   }, []);
 
   return (
-    <div
-      className="overflow-x-auto p-4 flex-wrap"
-      style={{
-        whiteSpace: "nowrap",
-        overflowY: "hidden",
-        scrollbarWidth: "thin",
-        scrollBehavior: "smooth",
-      }}
-      ref={scrollContainerRef}
-    >
-      <style>
-        {`
+    <div className="my-7">
+      <h1 className="flex justify-center text-3xl font-semibold text-gray-800 ">Our Works</h1>
+      <div
+        className="overflow-x-auto p-4 flex-wrap"
+        style={{
+          whiteSpace: "nowrap",
+          overflowY: "hidden",
+          scrollbarWidth: "thin",
+          scrollBehavior: "smooth",
+        }}
+        ref={scrollContainerRef}
+      >
+        <style>
+          {`
           /* Add custom scrollbar styles here */
           ::-webkit-scrollbar {
             width: 6px;
@@ -132,15 +134,16 @@ const Ourworks = () => {
             background: #555;
           }
         `}
-      </style>
-      {cards.map((card, index) => (
-        <Card
-          key={index}
-          title={card.title}
-          description={card.description}
-          image={card.image}
-        />
-      ))}
+        </style>
+        {cards.map((card, index) => (
+          <Card
+            key={index}
+            title={card.title}
+            description={card.description}
+            image={card.image}
+          />
+        ))}
+      </div>
     </div>
   );
 };
