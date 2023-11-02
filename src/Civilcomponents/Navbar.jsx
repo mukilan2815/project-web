@@ -72,7 +72,7 @@ const Navbar = () => {
   return (
     <div className="relative z-40">
       {selectedDept !== "Civil" && selectedDept !== "EEE" && (
-        <nav className="navbar-section bg-green-200">
+        <nav className="navbar-section bg-blue-300">
           <div className="flex justify-around relative">
             <img src={kahe} alt="kahe" width={200} />
             {isMobile ? (
@@ -99,13 +99,13 @@ const Navbar = () => {
                     <li className="cursor-pointer relative">
                       Department
                       {showDropdown && (
-                        <ul className="absolute bg-green-200 p-2 rounded-lg shadow-md">
+                        <ul className="absolute bg-blue-200 p-2 rounded-lg shadow-md">
                           {departments.map((dept, index) => (
                             <li
                               key={index}
                               className={`relative font-bold m-1 ${
                                 selectedDept === dept
-                                  ? "text-white bg-green-500"
+                                  ? "text-white bg-blue-500"
                                   : "text-black"
                               }`}
                               onClick={() => handleDepartmentClick(dept)}
