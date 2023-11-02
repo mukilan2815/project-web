@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import kahe from "../Images/LOGO-with-different-colors-03.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = () => {
+export const Navbar = () => {
   const menuItems = [
     "Home",
     "About",
@@ -60,15 +60,6 @@ const Navbar = () => {
                       {item}
                     </li>
                   ))}
-                  <li className="cursor-pointer " onClick={toggleDropdown}>
-                  </li>
-                  {showDropdown && (
-                    <ul className="ml-2">
-                      <li>EEE</li>
-                      <li>CIVIL</li>
-                      <li>CHEMISTRY</li>
-                    </ul>
-                  )}
                 </ul>
               )}
             </div>
@@ -79,15 +70,6 @@ const Navbar = () => {
                   {item}
                 </li>
               ))}
-              <li className="cursor-pointer" onClick={toggleDropdown}>
-              </li>
-              {showDropdown && (
-                <ul className="ml-2">
-                  <li>EEE</li>
-                  <li>CIVIL</li>
-                  <li>CHEMISTRY</li>
-                </ul>
-              )}
             </ul>
           )}
         </div>
@@ -95,5 +77,3 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;

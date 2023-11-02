@@ -30,7 +30,7 @@ const Ourservices = () => {
             <div
               className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="2000"
             >
               <img
                 src={sim}
@@ -72,7 +72,7 @@ const Ourservices = () => {
             <div
               className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="4000"
             >
               <img
                 src={sim}
@@ -98,7 +98,7 @@ const Ourservices = () => {
             <div
               className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="5000"
             >
               <img
                 src={sim}
@@ -119,7 +119,7 @@ const Ourservices = () => {
             <div
               className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="6000"
             >
               <img
                 src={sim}
@@ -144,7 +144,7 @@ const Ourservices = () => {
             <div
               className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="7000"
             >
               <img
                 src={sim}
@@ -165,7 +165,7 @@ const Ourservices = () => {
             <div
               className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="8000"
             >
               <img
                 src={sim}
@@ -186,7 +186,7 @@ const Ourservices = () => {
             <div
               className="bg-white w-[100%] rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="9000"
             >
               <img
                 src={sim}
