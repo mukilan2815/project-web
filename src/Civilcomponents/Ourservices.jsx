@@ -72,7 +72,7 @@ const Ourservices = () => {
 
             {/* Service Item 3 */}
             <div
-              className="bg-white w-full rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
+              className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transform hover:scale-105 transition-transform duration-300 flex"
               data-aos="fade-up"
               data-aos-duration="4000"
             >
@@ -81,11 +81,11 @@ const Ourservices = () => {
                 alt="Service Image 4"
                 className="w-20 h-20 rounded-full"
               />
-              <div className="flex-1 flex flex-col items-center">
+              <div className="flex-1 flex flex-col items-center ">
                 <h3 className="text-lg font-semibold text-gray-800 text-center pt-3">
                   TRANSPORTATION ENGINEERING
                 </h3>
-                <p className="text-gray-600 text-sm text-center">
+                <p className="text-gray-600 text-sm">
                   Flexible & Rigid pavement design, Geometric design of
                   Pavement, Road Network planning & Design for pavement (Rigid
                   and Flexible), Overlays Design of pavement, Bituminous Mix

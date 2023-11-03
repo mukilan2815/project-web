@@ -1,13 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import img1 from "../Images/work1.jpeg";
-import img2 from "../Images/work2.jpeg";
-import img3 from "../Images/work3.jpeg";
-import img4 from "../Images/work4.jpeg";
-import img9 from "../Images/work9.jpeg";
-import img5 from "../Images/work5.jpeg";
-import img6 from "../Images/work6.jpeg";
-import img7 from "../Images/work7.jpeg";
-import img8 from "../Images/work8.jpeg";
+import img1 from "../Images/civilwork.jpg";
+import img2 from "../Images/civil1.jpg";
+import img3 from "../Images/civil2.jpg";
+import img4 from "../Images/civil3.jpg";
 
 const Card = ({ title, description, image }) => (
   <div
@@ -33,51 +28,23 @@ const Ourworks = () => {
   const cards = [
     {
       title: "Card 1 Title",
-      description: "Description for Card 1",
+      description: "Surveying work at pudukottai dt",
       image: img1,
     },
     {
       title: "Card 2 Title",
-      description:
-        "Seethalakshi foundry, HT service audit , shortout the  MD issues",
+      description: "Surveying work at pudukottai dt",
       image: img2,
     },
     {
       title: "Card 3 Title",
-      description:
-        "National model school, purpose of auditing is to reduce EB bill and achieved 15,000 per month and give suggestions to achieve nearly 30,000",
+      description: "Surveying work at pudukottai dt",
       image: img3,
     },
+
     {
       title: "Card 4 Title",
-      description: "Description for Card 4",
-      image: img9,
-    },
-    {
-      title: "Card 5 Title",
-      description: "Description for Card 5",
-      image: img5,
-    },
-    {
-      title: "Card 6 Title",
-      description:
-        "MSK Engineers, PF improvement from 0.84 to 0.97 and cut off the penalty charges",
-      image: img6,
-    },
-    {
-      title: "Card 7 Title",
-      description:
-        "Best heat treatment,  find out the reason for PF and give solutions for their three years of PF plenty charge of Rupees 30000 per month",
-      image: img7,
-    },
-    {
-      title: "Card 8 Title",
-      description: "Description for Card 8",
-      image: img8,
-    },
-    {
-      title: "Card 9 Title",
-      description: "Description for Card 9",
+      description: "Surveying work at pudukottai dt",
       image: img4,
     },
   ];
@@ -113,7 +80,9 @@ const Ourworks = () => {
 
   return (
     <div className="my-7">
-      <h1 className="flex justify-center text-3xl font-semibold text-gray-800 ">Our Works</h1>
+      <h1 className="flex justify-center text-3xl font-semibold text-gray-800 ">
+        Our Works
+      </h1>
       <div
         className="overflow-x-auto p-4 flex-wrap"
         style={{

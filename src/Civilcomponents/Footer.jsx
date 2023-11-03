@@ -10,16 +10,6 @@ const Footer = () => {
     <div id="civilfooter" className="bg-blue-200 flex justify-evenly py-28">
       {" "}
       <section>
-        <h5 className="font-bold m-4">FACULTY COORDINATES</h5>
-        <p className="m-2">Dr.A.Amudha, Ph.D</p>
-        <p className="font-thin justify-center m-2">Head & Dean</p>
-        <p className="m-2">Dr.V.J. Vijayalakshmi, Ph.D</p>
-        <p className="font-thin m-2">Head & Dean</p>
-        <p className="m-2">Dr.A.Amudha, Ph.D</p>
-        <p className="font-thin m-2">Head & Dean</p>
-      </section>
-      <section style={lineStyle}></section>{" "}
-      <section>
         <h5 className="font-bold mt-4">NAVIGATION</h5>
         <p className="m-2">Home</p>
         <p className="m-2">About</p>
@@ -31,18 +21,18 @@ const Footer = () => {
       <section style={lineStyle}></section>
       <section>
         <h5 className="font-bold mt-4">SERVICES</h5>
-        <p className="my-2">Electrical Distribution System</p>
-        <p className="my-2">PF Improvement System</p>
-        <p className="my-2">PQ Study / Harmonics</p>
-        <p className="my-2">Capacitor Performance</p>
+        <p className="my-2">STRUCTURAL ENGINEERING</p>
+        <p className="my-2">DRAFTING WORKS</p>
+        <p className="my-2">TRANSPORTATION ENGINEERING</p>
+        <p className="my-2">TESTS ON MATERIALS</p>
+        <p className="my-2">SURVEYING WORKS:</p>
       </section>
       <section style={lineStyle}></section>
       <section>
         <h5 className="font-bold mt-4">CONTACT</h5>
-        <p className="my-2">Mrs. P. Nagaveni</p>
-        <p className="my-2">Mobile: 9600396715</p>
-        <p className="my-2">Email id: magaveni.p@kahedu.edu.in</p>
-        <p className="my-2">Capacitor Performance</p>
+        <p className="my-2">Mr. V.Johnpaul</p>
+        <p className="my-2">Mobile: 9952506549</p>
+        <p className="my-2">Email id: Johnpaul.v@kahedu.edu.in</p>
       </section>
     </div>
   );
