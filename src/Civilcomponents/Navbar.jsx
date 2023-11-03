@@ -2,11 +2,17 @@ import React, { useState, useEffect } from "react";
 import kahe from "../Images/LOGO-with-different-colors-03.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdArrowDropDown } from "react-icons/md";
-import Civil from "../Civil"; // Import the Civil component
-import App from "../App"; // Import the App component
+import Civil from "../Civil";
 
 const Navbar = () => {
-  const menuItems = ["Home", "About", "Our Services", "Our Works", "Faculties", "Contact"];
+  const menuItems = [
+    "Home",
+    "About",
+    "Our Services",
+    "Our Works",
+    "Faculties",
+    "Contact",
+  ];
   const departments = ["EEE", "Civil", "Chemistry"];
 
   const [isMobile, setIsMobile] = useState(false);
@@ -30,6 +36,15 @@ const Navbar = () => {
     toggleDropdown();
   };
 
+  const handleMenuItemClick = (item) => {
+    const target = document.getElementById(
+      item.toLowerCase().replace(" ", "-")
+    );
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     window.addEventListener("load", handleResize);
@@ -42,8 +57,8 @@ const Navbar = () => {
 
   return (
     <div className="relative z-40">
-      {selectedDept !== "Civil" && selectedDept !== "EEE" && (
-        <nav className="navbar-section bg-blue-300">
+      {selectedDept !== "Civil" && (
+        <nav className="navbar-section bg-green-200">
           <div className="flex justify-around relative">
             <img src={kahe} alt="kahe" width={200} />
             {isMobile ? (
@@ -59,7 +74,10 @@ const Navbar = () => {
                       <li
                         key={index}
                         className="cursor-pointer"
-                        onClick={toggleDropdown}
+                        onClick={() => {
+                          toggleDropdown();
+                          handleMenuItemClick(item);
+                        }}
                       >
                         {item}
                       </li>
@@ -67,14 +85,15 @@ const Navbar = () => {
                     <li className="cursor-pointer relative">
                       Department
                       {showDropdown && (
-                        <ul className="absolute bg-blue-200 p-2 rounded-lg shadow-md">
+                        <ul className="absolute bg-green-200 p-2 rounded-lg shadow-md">
                           {departments.map((dept, index) => (
                             <li
                               key={index}
-                              className={`relative font-bold m-1 ${selectedDept === dept
-                                  ? "text-white bg-blue-500"
+                              className={`relative font-bold m-1 ${
+                                selectedDept === dept
+                                  ? "text-white bg-green-500"
                                   : "text-black"
-                                }`}
+                              }`}
                               onClick={() => handleDepartmentClick(dept)}
                             >
                               {dept}
@@ -90,25 +109,29 @@ const Navbar = () => {
               <ul className="flex items-center ml-10 relative">
                 {menuItems.map((item, index) => (
                   <li key={index} className={index !== 0 ? "ml-10" : ""}>
-                    <a href="#" onClick={toggleDropdown}>
+                    <a
+                      href={`#${item.toLowerCase().replace(" ", "-")}`}
+                      onClick={() => handleMenuItemClick(item)}
+                    >
                       {item}
                     </a>
                   </li>
                 ))}
                 <li
-                  className="flex select-none items-center ml-10 cursor-pointer relative bg-blue-600 p-3 rounded-xl"
+                  className="flex select-none items-center ml-10 cursor-pointer relative bg-green-600 p-3 rounded-xl"
                   onClick={toggleDropdown}
                 >
                   Department <MdArrowDropDown size={20} />
                   {showDropdown && (
-                    <ul className="absolute mt-40 z-10 bg-blue-200 p-2 rounded-lg shadow-lg">
+                    <ul className="absolute mt-40 z-10 bg-green-200 p-2 rounded-lg shadow-lg">
                       {departments.map((dept, index) => (
                         <li
                           key={index}
-                          className={`relative font-bold select-none m-1 ${selectedDept === dept
-                              ? "text-white bg-blue-500 w-full"
+                          className={`relative font-bold select-none m-1 ${
+                            selectedDept === dept
+                              ? "text-white bg-green-500 w-full"
                               : "text-black"
-                            }`}
+                          }`}
                           onClick={() => handleDepartmentClick(dept)}
                         >
                           {dept}
@@ -123,8 +146,8 @@ const Navbar = () => {
         </nav>
       )}
       {selectedDept === "Civil" && <Civil id="civil" />}
-      {selectedDept === "EEE" && <App />}
     </div>
   );
-}
+};
+
 export default Navbar;

@@ -7,7 +7,10 @@ const Footer = () => {
   };
 
   return (
-    <div id="civilfooter" className="bg-blue-200 flex justify-evenly py-28">
+    <div
+      id="civilfooter"
+      className="bg-blue-200 flex flex-col md:flex-row items-center justify-around py-6 md:py-28"
+    >
       {" "}
       <section>
         <h5 className="font-bold mt-4">NAVIGATION</h5>

@@ -56,7 +56,7 @@ const Home = () => {
         </h1>
         <br /> <br />
         <div className="md:pl-2 ml-4 md:ml-20" data-aos="fade-up">
-          <button className="bg-blue-400 rounded-3xl p-3 md:p-4 px-8 md:px-10 flex items-center border-none hover:bg-blue-500 transition-colors">
+          <button id="civilabout" className="bg-blue-400 rounded-3xl p-3 md:p-4 px-8 md:px-10 flex items-center border-none hover:bg-blue-500 transition-colors">
             Know More
             <div>
               <AiOutlineArrowRight />
