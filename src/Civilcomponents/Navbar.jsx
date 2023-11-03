@@ -6,15 +6,7 @@ import Civil from "../Civil"; // Import the Civil component
 import App from "../App"; // Import the App component
 
 const Navbar = () => {
-  const menuItems = [
-    "Home",
-    "About",
-    "Our Services",
-    "Our Works",
-    "Faculties",
-    "Contact",
-  ];
-
+  const menuItems = ["Home", "About", "Our Services", "Our Works", "Faculties", "Contact"];
   const departments = ["EEE", "Civil", "Chemistry"];
 
   const [isMobile, setIsMobile] = useState(false);
@@ -48,27 +40,6 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleMenuItemClick = (item) => {
-    // Smooth scrolling to the corresponding section
-    const targetId =
-      item === "Home" ? "civil" : item.toLowerCase().replace(" ", "-");
-    const target = document.getElementById(targetId);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-
-    // Update the selected department if needed
-    if (item === "About" && selectedDept !== "Civil") {
-      setSelectedDept("Civil");
-    } else if (item === "Faculties" && selectedDept !== "EEE") {
-      setSelectedDept("EEE");
-    } else {
-      setSelectedDept(null);
-    }
-
-    toggleDropdown();
-  };
-
   return (
     <div className="relative z-40">
       {selectedDept !== "Civil" && selectedDept !== "EEE" && (
@@ -88,10 +59,7 @@ const Navbar = () => {
                       <li
                         key={index}
                         className="cursor-pointer"
-                        onClick={() => {
-                          toggleDropdown();
-                          handleMenuItemClick(item);
-                        }}
+                        onClick={toggleDropdown}
                       >
                         {item}
                       </li>
@@ -103,11 +71,10 @@ const Navbar = () => {
                           {departments.map((dept, index) => (
                             <li
                               key={index}
-                              className={`relative font-bold m-1 ${
-                                selectedDept === dept
+                              className={`relative font-bold m-1 ${selectedDept === dept
                                   ? "text-white bg-blue-500"
                                   : "text-black"
-                              }`}
+                                }`}
                               onClick={() => handleDepartmentClick(dept)}
                             >
                               {dept}
@@ -123,29 +90,25 @@ const Navbar = () => {
               <ul className="flex items-center ml-10 relative">
                 {menuItems.map((item, index) => (
                   <li key={index} className={index !== 0 ? "ml-10" : ""}>
-                    <a
-                      href={`#${item.toLowerCase().replace(" ", "-")}`}
-                      onClick={() => handleMenuItemClick(item)}
-                    >
+                    <a href="#" onClick={toggleDropdown}>
                       {item}
                     </a>
                   </li>
                 ))}
                 <li
-                  className="flex select-none items-center ml-10 cursor-pointer relative bg-green-600 p-3 rounded-xl"
+                  className="flex select-none items-center ml-10 cursor-pointer relative bg-blue-600 p-3 rounded-xl"
                   onClick={toggleDropdown}
                 >
                   Department <MdArrowDropDown size={20} />
                   {showDropdown && (
-                    <ul className="absolute mt-40 z-10 bg-green-200 p-2 rounded-lg shadow-lg">
+                    <ul className="absolute mt-40 z-10 bg-blue-200 p-2 rounded-lg shadow-lg">
                       {departments.map((dept, index) => (
                         <li
                           key={index}
-                          className={`relative font-bold select-none m-1 ${
-                            selectedDept === dept
-                              ? "text-white bg-green-500 w-full"
+                          className={`relative font-bold select-none m-1 ${selectedDept === dept
+                              ? "text-white bg-blue-500 w-full"
                               : "text-black"
-                          }`}
+                            }`}
                           onClick={() => handleDepartmentClick(dept)}
                         >
                           {dept}
@@ -163,6 +126,5 @@ const Navbar = () => {
       {selectedDept === "EEE" && <App />}
     </div>
   );
-};
-
+}
 export default Navbar;

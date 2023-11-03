@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img1 from "../Images/vaigundamoorthihod.png";
-import img2 from "../Images/balachandran.png";
+import img2 from "../Images/nagaveni.png";
 import img3 from "../Images/balachandran.png";
 import img4 from "../Images/selvaganapathi.png";
 import img5 from "../Images/sivaramkumar.png";
@@ -79,7 +79,10 @@ const Faculties = () => {
   };
 
   return (
-    <div id="civilfaculties" className="bg-green-200 rounded-lg flex flex-col py-5">
+    <div
+      id="civilfaculties"
+      className="bg-blue-200 rounded-lg flex flex-col py-5"
+    >
       <div className="flex justify-center text-3xl font-semibold text-gray-800 ">
         <h1>Our Faculties</h1>
       </div>
@@ -111,7 +114,7 @@ const Faculties = () => {
                   {faculty.location}
                 </p>
                 <button
-                  className="text-gray-900 bg-green-400 p-4 rounded-lg leading-none mt-4 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-green-500"
+                  className="text-gray-900 bg-blue-400 p-4 rounded-lg leading-none mt-4 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-500"
                   onClick={() => handleReadMoreClick(index)}
                 >
                   Read More
